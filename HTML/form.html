@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: aqua;
+        }
+        .heading{
+            font-size:2rem;
+            text-align: center;
+            color: red;
+        }
+        .table{
+            border: 2px solid black;
+            font-size:1.5rem;
+            align-content: center;
+            margin: auto;
+        }
+        td{
+            padding:5px;
+        }
+        .input{
+            font-size: 1.5rem;
+        }
+        .buttons{
+            font-size: 1.25rem;
+            border: none;
+            background-color: red;
+            border: 1px solid black;
+            width:200px;
+            height:30px;
+        }
+        .button{
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <form action="/submit" method="post"> 
+    <h1 class="heading">Student Registration Form</h1>
+    <table class="table" border="1" cellpadding="10px">
+        <tr>
+            <td><label for="name">Name</label></td>
+            <td><input type="text" id="name" placeholder="Enter name" required class="input"></td>
+        </tr>
+        <tr>
+            <td><label for="Father's name">Father Name</label></td>
+            <td><input type="text" id="Father's name" placeholder="Enter Father's Name" required class="input"></td>
+        </tr>
+         <tr>
+            <td><label for="dob">DOB</label></td>
+            <td><input type="date" id="dob" class="input"></td>
+        </tr>
+        
+        <tr>
+            <td><label for="radio">Sex</label></td>
+            <td><input type="radio" name="gender" id="male" value="male" class="input">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female" class="input">
+                <label for="female">Female</label>
+            </td>
+        </tr>
+         <tr>
+            <td><label for="tel">Mobile No.</label></td>
+            <td><input type="tel" id="tel" required class="input"></td>
+        </tr>
+         <tr>
+            <td><label for="text">Course</label></td>
+            <td>
+                <select required class="input">
+                <option value="select">Select</option>
+                <option value="BTech">Btech</option>
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+            </select>
+        </td>
+        </tr>
+        <tr>
+            <td><label for="text">Skills</label></td>
+            <td><input type="checkbox">
+                <label for="checkbox" >HTML</label>
+                <input type="checkbox">
+                <label for="checkbox">CSS</label>
+                <input type="checkbox">
+                <label for="checkbox">JavaScript</label>
+                <input type="checkbox">
+                <label for="checkbox">Java</label>
+                <input type="checkbox">
+                <label for="checkbox">DSA</label>
+                <input type="checkbox">
+                <label for="checkbox">Python</label>
+                <input type="checkbox">
+                <label for="checkbox">Cloud</label>
+                <input type="checkbox">
+                <label for="checkbox">MERN</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="add">Postal Address</label></td>
+            <td><input type="text" id="add" class="input" required></td>
+        </tr>
+        <tr>
+            <td><label for="address">Personal Address</label></td>
+            <td><input type="text" id="address" class="input" required></td>
+        </tr>
+        <tr>
+            <td><label for="text">City</label></td>
+            <td>
+                <select class="input">
+                <option value="select">Select</option>
+                <option value="Chhata">Chhata</option>
+                <option value="Mathura">Mathura</option>
+                <option value="Kosi">Kosi</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label for="text">District</label></td>
+            <td>
+                <select class="input">
+                <option value="select">Select</option>
+                <option value="mathura">Mathura</option>
+                <option value="agra">Agra</option>
+                <option value="Palwal">Palwal</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="text">State</label></td>
+            <td>
+                <select class="input">
+                <option value="select">Select</option>
+                <option value="UP">Uttar Pradesh</option>
+                <option value="HR">Haryana</option>
+                <option value="HP">Himachal Pradesh</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="pincode">Pin Code</label></td>
+            <td><input type="text" id="pincode" required class="input"></td>
+        </tr>
+        <tr>
+        <td><label for="file">Upload your CV</label></td>
+            <td><input type="file" id="file" class="input"></td>
+        </tr>
+        <tr>
+            <td><label for="mail">Email ID</label></td>
+            <td><input type="text" id="mail" placeholder="enter email id" class="input"></td>
+        </tr>
+        <tr>
+            <td><label for="password">Password</label></td>
+            <td><input type="password" id="password" placeholder="enter your password" class="input"></td>
+        </tr>
+        <tr>
+            <td class="button" colspan="2">
+                <button class="buttons">Reset</button>
+                <button class="buttons">Submit Form</button>
+            </td>
+        </tr>
+    </table>
+    </form>
+    </div>   
+</body>
+</html>
