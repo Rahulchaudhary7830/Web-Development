@@ -1,0 +1,29 @@
+*{
+  background-color: black;
+  color: white;
+}
+a:visited{
+  color: green;
+}
+h1{
+  color: red;
+  font-weight: bold;
+}
+img{
+  height:200px;
+  width:300px;
+}
+h2{
+  color: green;
+}
+table{
+  border: 1px solid red;
+}
+th{
+  color: blue;
+}
+iframe{
+  width:300px; 
+  height:200px; 
+  border:0; 
+}
