@@ -1,0 +1,55 @@
+/* element selector */
+body{
+    background-color: black;
+    color: white;
+}
+td{
+    padding:5px;
+}
+
+
+/*class selector*/
+.heading{
+    font-size:30px;
+    text-align: center;
+    color: blue;
+}
+.table{
+    border: 2px solid red;
+    font-size:1.5rem;
+    align-content: center;
+    margin: auto;
+}
+
+.input{
+    font-size: 1.5rem;
+}
+.buttons{
+    font-size: 1.25rem;
+    border: none;
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    width:200px;
+    height:30px;
+}
+.button{
+    text-align: center;
+    vertical-align: middle;
+}
+/*pseudo attributes */
+.buttons:hover{
+    background-color: blue;
+}
+
+/*id selector*/  
+#name{
+    background-color: red;
+    color: white;
+}
+/* descendent selector */
+div{p{color: red;}}
+p{color: blue;}
+.rgb{
+    color:rgba(97, 121, 24, 0.884)
+}
